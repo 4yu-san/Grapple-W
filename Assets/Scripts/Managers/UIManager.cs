@@ -90,6 +90,7 @@ public class UIManager : MonoBehaviour
     {
         ResetCursor();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameManager.instance.ResetGame();
     }
 
     public void ExitGame()
@@ -102,5 +103,13 @@ public class UIManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    public void NextLevel()
+    {
+        GameManager.instance.SetState(GameManager.GameState.Playing);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

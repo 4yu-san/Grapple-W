@@ -55,16 +55,44 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         hasGameStarted = true;
+            State = GameState.Playing;
+            AudioManager.instance.PlayGameMusic();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
     }
     public void GameOver()
     {
         gameOver = true;
         State = GameState.GameOver;
         Debug.Log("Game Over Triggered");
+        //AudioManager.instance.PlayGameOver();
         UIManager.instance.HandleGameOverUI();
         Time.timeScale = 0f; // Freeze game time
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
+    public void LevelCompleted()
+    {
+        State = GameState.GameOver;
+        Debug.Log("Level Completed!");
+        //AudioManager.instance.PlayLevelComplete();
+        UIManager.instance.HandleLevelCompleteUI();
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void ResetGame()
+    {
+        gameOver = false;
+        hasGameStarted = false;
+        State = GameState.Playing;
+        //AudioManager.instance.PlayGameMusic();
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
 
 }
