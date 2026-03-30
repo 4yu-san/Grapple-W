@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public GameObject pauseMenuScreen;
     public GameObject gameUIPanel;
     public GameObject levelCompleteScreen;
+    public TMPro.TextMeshProUGUI levelCompleteTimer;    
 
     // Singleton instance
     private static UIManager _instance;
@@ -57,8 +58,9 @@ public class UIManager : MonoBehaviour
         GameManager.instance.SetState(GameManager.GameState.GameOver);
         levelCompleteScreen.SetActive(true);
         gameUIPanel.SetActive(false);
+        levelCompleteTimer.text = "Time : " + FormatTime(GameManager.instance.finalTime);
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        Cursor.visible = true;        
     }
 
     // --- Game Over ---
@@ -69,6 +71,14 @@ public class UIManager : MonoBehaviour
         gameUIPanel.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    private string FormatTime(float elapsedTime)
+    {
+        int minutes = (int)(elapsedTime / 60);
+        int seconds = (int)(elapsedTime % 60);
+        int milliseconds = (int)((elapsedTime * 100) % 100);
+        return string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
     }
 
     // --- Navigation ---

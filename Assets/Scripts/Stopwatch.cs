@@ -5,11 +5,13 @@ public class Stopwatch : MonoBehaviour
 {
     public TMP_Text timerText;       // Drag your UI Text here in Inspector
 
+    public float ElapsedTime => elapsedTime;
     private float elapsedTime = 0f;
     private bool isRunning = false;
 
     void Start()
     {
+        isRunning = true;
         UpdateDisplay(); // shows 00:00.00 on game start
     }
 

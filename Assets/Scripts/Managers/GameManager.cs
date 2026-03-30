@@ -5,7 +5,10 @@ public class GameManager : MonoBehaviour
 {
     
     public bool gameOver = false;
+    public Stopwatch stopwatch;
+
     public bool hasGameStarted = false;
+    public float finalTime = 0f;
     public GameState State { get; private set; } = GameState.Playing;
 
     public static GameManager _instance;
@@ -57,6 +60,7 @@ public class GameManager : MonoBehaviour
         hasGameStarted = true;
             State = GameState.Playing;
             AudioManager.instance.PlayGameMusic();
+            stopwatch.StartStop();
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
     }
@@ -66,6 +70,7 @@ public class GameManager : MonoBehaviour
         State = GameState.GameOver;
         Debug.Log("Game Over Triggered");
         //AudioManager.instance.PlayGameOver();
+        stopwatch.StartStop();
         UIManager.instance.HandleGameOverUI();
         Time.timeScale = 0f; // Freeze game time
         Cursor.lockState = CursorLockMode.None;
@@ -75,8 +80,9 @@ public class GameManager : MonoBehaviour
     public void LevelCompleted()
     {
         State = GameState.GameOver;
+        finalTime = stopwatch.ElapsedTime; // record it BEFORE stopping
+        stopwatch.StartStop(); // now stop it
         Debug.Log("Level Completed!");
-        //AudioManager.instance.PlayLevelComplete();
         UIManager.instance.HandleLevelCompleteUI();
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
@@ -89,6 +95,7 @@ public class GameManager : MonoBehaviour
         hasGameStarted = false;
         State = GameState.Playing;
         //AudioManager.instance.PlayGameMusic();
+        stopwatch.Reset();
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
