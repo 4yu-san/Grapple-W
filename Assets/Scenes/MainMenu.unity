@@ -1036,6 +1036,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592035852}
   m_CullTransparentMesh: 1
+--- !u!1001 &740033609
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049768406680169326, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049875749580579777, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
 --- !u!1 &788999733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1230,17 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &882531984 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8013435753280069968, guid: 6f29689df49094946a95e78465bf6a44, type: 3}
+  m_PrefabInstance: {fileID: 740033609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea048bbd07fd2e16a6bb27daa3f10fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
 --- !u!1001 &885979327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1282,7 +1350,7 @@ PrefabInstance:
     - target: {fileID: 8777415484146059411, guid: 3bac3d94311690eedb0a25dbd2498f83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 882531984}
     - target: {fileID: 8777415484146059411, guid: 3bac3d94311690eedb0a25dbd2498f83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2046,7 +2114,7 @@ PrefabInstance:
     - target: {fileID: 8777415484146059411, guid: 3bac3d94311690eedb0a25dbd2498f83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 882531984}
     - target: {fileID: 8777415484146059411, guid: 3bac3d94311690eedb0a25dbd2498f83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2083,3 +2151,4 @@ SceneRoots:
   - {fileID: 1254837916}
   - {fileID: 1118154950}
   - {fileID: 979847720}
+  - {fileID: 740033609}
