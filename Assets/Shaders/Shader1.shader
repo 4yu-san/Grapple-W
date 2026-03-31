@@ -14,7 +14,7 @@ Shader "Unlit/Shader1"
 
         Pass{ 
 
-            Cull Off
+            Cull Back
             ZWrite Off
             ZTest LEqual
             Blend One One //additive

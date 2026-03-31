@@ -82,7 +82,8 @@ public class GameManager : MonoBehaviour
         State = GameState.GameOver;
         finalTime = stopwatch.ElapsedTime; // record it BEFORE stopping
         stopwatch.StartStop(); // now stop it
-        Debug.Log("Level Completed!");
+        stopwatch.ShowEndTime(); // show end time on level complete screen
+        stopwatch.CheckForBestTime(); // check for best time after stopping
         UIManager.instance.HandleLevelCompleteUI();
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;

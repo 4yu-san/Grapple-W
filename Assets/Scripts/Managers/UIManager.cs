@@ -73,7 +73,7 @@ public class UIManager : MonoBehaviour
         Cursor.visible = true;
     }
 
-    private string FormatTime(float elapsedTime)
+    public string FormatTime(float elapsedTime)
     {
         int minutes = (int)(elapsedTime / 60);
         int seconds = (int)(elapsedTime % 60);
