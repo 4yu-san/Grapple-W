@@ -11,12 +11,9 @@ A physics-based 3D parkour/platformer built in Unity, centered on a Spring Joint
 <p align="center">
   <img src="docs/images/movement-showcase.gif" alt="Grapple-W movement showcase — grapple, slide, and momentum chaining" width="700">
   <br>
-  <em>GIF placeholder — record a short clip chaining a grapple swing into a crouch-slide and convert it to GIF</em>
+  
 </p>
 
-<p align="center">
-  🎮 <strong><a href="https://4yu-san.itch.io/grapple-w">Play Grapple-W on itch.io</a></strong>
-</p>
 
 ## What is this?
 
