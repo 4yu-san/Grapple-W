@@ -1,0 +1,23 @@
+{
+  "_note": "Conservative estimates, in metres. Tune these by playtesting. Real grapple raycast range in GrapplingGun.cs is 100.",
+  "eyeHeight": 1.6,
+  "headroom": 2.5,
+  "jumpUpMax": 2.0,
+  "jumpGapMax": 5.0,
+  "dropGapBonusPerMetre": 0.3,
+  "grappleRange": 40.0,
+  "grappleRiseMax": 25.0,
+  "maxPieces": 40,
+  "killFloorMargin": 25.0,
+  "bounds": {
+    "x": [-400, 400],
+    "y": [-60, 150],
+    "z": [-400, 400]
+  },
+  "shapes": {
+    "platform": { "width": [3, 40],  "depth": [3, 40],  "height": [0.5, 3] },
+    "pillar":   { "width": [2, 5],   "depth": [2, 5],   "height": [4, 40] },
+    "wall":     { "width": [6, 40],  "depth": [0.5, 1.5], "height": [6, 40] },
+    "goal":     { "width": [6, 30],  "depth": [6, 30],  "height": [0.5, 3] }
+  }
+}
