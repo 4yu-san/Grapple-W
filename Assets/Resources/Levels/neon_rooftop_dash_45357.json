@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "name": "Neon Rooftop Dash",
+  "theme": "neon rooftops",
+  "seed": 45357,
+  "start": {
+    "position": [
+      0.0,
+      1.5,
+      0.0
+    ],
+    "yaw": 0
+  },
+  "killFloorY": -55.0,
+  "pieces": [
+    {
+      "id": "p0",
+      "type": "platform",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        6.0
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "p1",
+      "type": "wall",
+      "position": [
+        -8.5,
+        -14.0,
+        3.0
+      ],
+      "size": [
+        10.0,
+        30.0,
+        1.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p2",
+      "type": "pillar",
+      "position": [
+        -18.0,
+        1.5,
+        3.0
+      ],
+      "size": [
+        4.0,
+        15.0,
+        4.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p3",
+      "type": "platform",
+      "position": [
+        -20.0,
+        10.5,
+        -13.5
+      ],
+      "size": [
+        9.0,
+        1.0,
+        9.0
+      ],
+      "yaw": 180
+    },
+    {
+      "id": "p4",
+      "type": "wall",
+      "position": [
+        -30.0,
+        -10.0,
+        -13.5
+      ],
+      "size": [
+        12.0,
+        40.0,
+        1.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p5",
+      "type": "platform",
+      "position": [
+        -38.0,
+        9.5,
+        -10.5
+      ],
+      "size": [
+        7.0,
+        1.0,
+        7.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p6",
+      "type": "pillar",
+      "position": [
+        -40.0,
+        11.0,
+        -24.5
+      ],
+      "size": [
+        5.0,
+        10.0,
+        5.0
+      ],
+      "yaw": 180
+    },
+    {
+      "id": "p7",
+      "type": "wall",
+      "position": [
+        -44.0,
+        1.5,
+        -34.5
+      ],
+      "size": [
+        15.0,
+        25.0,
+        1.0
+      ],
+      "yaw": 180
+    },
+    {
+      "id": "p8",
+      "type": "platform",
+      "position": [
+        -67.0,
+        16.5,
+        -34.5
+      ],
+      "size": [
+        11.0,
+        1.0,
+        11.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p9",
+      "type": "goal",
+      "position": [
+        -85.0,
+        15.0,
+        -34.5
+      ],
+      "size": [
+        15.0,
+        2.0,
+        15.0
+      ],
+      "yaw": 270
+    }
+  ],
+  "generator": {
+    "backend": "ollama",
+    "model": "llama3.2:latest",
+    "difficulty": 3
+  }
+}

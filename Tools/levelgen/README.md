@@ -12,7 +12,7 @@ pip install -r requirements.txt
 Install a local model runner. Ollama is the default:
 
 ```
-ollama pull qwen2.5:14b
+ollama pull llama3.2:latest 
 ```
 
 Pick a model that fits your VRAM. Larger models give better layouts; the validator and retry loop catch the mistakes small ones make.
@@ -20,7 +20,7 @@ Pick a model that fits your VRAM. Larger models give better layouts; the validat
 ## Generate
 
 ```
-python generate.py --count 5 --difficulty 3 --length 10 --theme "neon rooftops" --model qwen2.5:14b
+python generate.py --count 5 --difficulty 3 --length 10 --theme "neon rooftops" --model llama3.2:latest
 ```
 
 Output goes to `Assets/Resources/Levels/`. Useful flags:

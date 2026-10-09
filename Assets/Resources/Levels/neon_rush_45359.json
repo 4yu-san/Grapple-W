@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "name": "Neon Rush",
+  "theme": "neon rooftops",
+  "seed": 45359,
+  "start": {
+    "position": [
+      0.0,
+      1.5,
+      0.0
+    ],
+    "yaw": 0
+  },
+  "killFloorY": -40.0,
+  "pieces": [
+    {
+      "id": "p0",
+      "type": "platform",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "size": [
+        12.0,
+        1.0,
+        12.0
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "p1",
+      "type": "wall",
+      "position": [
+        9.5,
+        -5.0,
+        -2.0
+      ],
+      "size": [
+        10.0,
+        20.0,
+        1.0
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "p2",
+      "type": "pillar",
+      "position": [
+        21.0,
+        4.5,
+        -6.0
+      ],
+      "size": [
+        4.0,
+        15.0,
+        4.0
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "p3",
+      "type": "platform",
+      "position": [
+        19.0,
+        14.5,
+        -22.0
+      ],
+      "size": [
+        8.0,
+        1.0,
+        8.0
+      ],
+      "yaw": 180
+    },
+    {
+      "id": "p4",
+      "type": "wall",
+      "position": [
+        15.0,
+        12.5,
+        -32.75
+      ],
+      "size": [
+        12.0,
+        15.0,
+        1.5
+      ],
+      "yaw": 180
+    },
+    {
+      "id": "p5",
+      "type": "pillar",
+      "position": [
+        -0.5,
+        16.0,
+        -32.75
+      ],
+      "size": [
+        5.0,
+        12.0,
+        3.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p6",
+      "type": "platform",
+      "position": [
+        -14.0,
+        27.5,
+        -28.75
+      ],
+      "size": [
+        10.0,
+        1.0,
+        10.0
+      ],
+      "yaw": 270
+    },
+    {
+      "id": "p7",
+      "type": "wall",
+      "position": [
+        -12.0,
+        23.0,
+        -20.25
+      ],
+      "size": [
+        9.0,
+        20.0,
+        1.0
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "p8",
+      "type": "pillar",
+      "position": [
+        -6.0,
+        33.5,
+        -7.75
+      ],
+      "size": [
+        4.0,
+        15.0,
+        4.0
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "p9",
+      "type": "goal",
+      "position": [
+        -6.0,
+        42.5,
+        13.25
+      ],
+      "size": [
+        14.0,
+        1.0,
+        14.0
+      ],
+      "yaw": 0
+    }
+  ],
+  "generator": {
+    "backend": "ollama",
+    "model": "llama3.2:latest",
+    "difficulty": 3
+  }
+}

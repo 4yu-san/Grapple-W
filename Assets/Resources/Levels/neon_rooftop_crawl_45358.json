@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "name": "Neon Rooftop Crawl",
+  "theme": "neon rooftops",
+  "seed": 45358,
+  "start": {
+    "position": [
+      0.0,
+      1.5,
+      0.0
+    ],
+    "yaw": 0
+  },
+  "killFloorY": -31.0,
+  "pieces": [
+    {
+      "id": "p0",
+      "type": "platform",
+      "position": [
+        0.0,
+        -0.5,
+        0.0
+      ],
+      "size": [
+        20.0,
+        1.0,
+        20.0
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "p1",
+      "type": "wall",
+      "position": [
+        3.0,
+        -1.0,
+        15.75
+      ],
+      "size": [
+        15.0,
+        10.0,
+        1.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "p2",
+      "type": "pillar",
+      "position": [
+        25.0,
+        5.0,
+        14.75
+      ],
+      "size": [
+        4.0,
+        12.0,
+        3.0
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "p3",
+      "type": "platform",
+      "position": [
+        43.5,
+        12.5,
+        10.75
+      ],
+      "size": [
+        12.0,
+        1.0,
+        12.0
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "p4",
+      "type": "wall",
+      "position": [
+        41.5,
+        13.0,
+        -2.0
+      ],
+      "size": [
+        18.0,
+        10.0,
+        1.5
+      ],
+      "yaw": 180
+    },
+    {
+      "id": "p5",
+      "type": "goal",
+      "position": [
+        41.5,
+        18.5,
+        -18.25
+      ],
+      "size": [
+        15.0,
+        1.0,
+        15.0
+      ],
+      "yaw": 180
+    }
+  ],
+  "generator": {
+    "backend": "ollama",
+    "model": "llama3.2:latest",
+    "difficulty": 3
+  }
+}
